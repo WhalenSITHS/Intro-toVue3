@@ -2,9 +2,13 @@
 defineProps({
   msg: {
     type: String,
-    required: true
-  }
-})
+    required: true,
+  },
+  list: {
+    type: Array,
+    required: true,
+  },
+});
 </script>
 
 <template>
