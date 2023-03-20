@@ -1,4 +1,4 @@
-<!-- ComponentB.vue -->
+<!-- ComponentA.vue -->
 <script setup>
 import { store } from "../store.js";
 </script>
