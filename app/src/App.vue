@@ -18,6 +18,8 @@
     </div>
     <input v-model="animal" type="text" />
     <button @click="addAnimal(animal)">Add Animal</button>
+    <h2 v-if="auth">Logged in</h2>
+    <h2 v-else>Not Logged in</h2>
   </div>
 </template>
 
@@ -37,6 +39,7 @@ let animal = ''
 function addAnimal(animal) {
   animals.value.push(animal)
 }
+let auth = true
 </script>
 
 <style scoped></style>
