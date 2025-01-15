@@ -1,6 +1,6 @@
 <template>
   <div>
-    <NewChild @submitName:name="name" />
+    <NewChild @submitName:name="updateTheName" />
     <h1>{{ name }}</h1>
   </div>
 </template>
@@ -9,6 +9,9 @@
 import { ref } from 'vue'
 import NewChild from '../components/NewChild.vue'
 const name = ref('')
+const updateTheName = function (newName) {
+  name.value = newName
+}
 </script>
 
 <style scoped></style>

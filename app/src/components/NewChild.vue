@@ -10,7 +10,7 @@ import { ref } from 'vue'
 const name = ref('')
 const emit = defineEmits(['submitName'])
 const updateName = function () {
-  emit('submitName', name.value)
+  emit('submitName:name', name.value)
 }
 </script>
 
